@@ -5,14 +5,12 @@ description: |
 site: distill::distill_website
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = FALSE)
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+mtcars
+library(ggplot2)
+ggplot(data = mtcars,mapping = aes(x = mpg,y = cyl)) + geom_point()
 
 ```
 
