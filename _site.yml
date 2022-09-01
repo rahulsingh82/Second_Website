@@ -1,0 +1,14 @@
+name: "."
+title: "Second Website"
+description: |
+  Second Website
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: home.html
+    - text: "About"
+      href: about.html
+    - text: "Analysis"
+      href: analysis.html
+output: distill::distill_article
