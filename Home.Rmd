@@ -10,3 +10,15 @@ output:
 This is new site to display the analysis done by metrics team.
 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+library(RColorBrewer)
+Sprint_Details_2022 <- read_excel("C:/Old D/Sprint Details 2022.xlsx")
+z <-ggplot(data = Sprint_Details_2022,aes(x= BU,fill =factor(`SPA Range`,levels = c("%SPA is >100%","%SPA is 100%","%SPA is >=90%, <100%","%SPA is >=70%, <90%","%SPA is <70%")))) +geom_bar(position = "fill") + scale_x_discrete(limits = c("NA","DCX","Sogeti","I&D","Germany","NL","Nordics","ER&D")) + theme_classic()+scale_fill_manual(name=NULL,breaks =c("%SPA is >100%","%SPA is 100%","%SPA is >=90%, <100%","%SPA is >=70%, <90%","%SPA is <70%"),values = c(brewer.pal(5,"Dark2"))) + scale_y_continuous(expand = c(0,0))+ylab("% Story Point Accpetance")
+```
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+z
+```
