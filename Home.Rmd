@@ -13,7 +13,6 @@ This is new site to display the analysis done by metrics team.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
-library(openxlsx)
 library(readxl)
 library(RColorBrewer)
 
