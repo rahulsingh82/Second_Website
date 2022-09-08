@@ -1,7 +1,7 @@
 ---
-title: "Second Website"
+title: "BUwise Sprint Analysis"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Following graph depicts BU wise Performance for Story point acceptance!
 site: distill::distill_website
 ---
 
